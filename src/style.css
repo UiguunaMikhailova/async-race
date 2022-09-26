@@ -1,0 +1,144 @@
+body {
+    background-color: rgb(44, 42, 56);
+    color: #ffffff;
+    font-size: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.garage-page {
+    display: block;
+}
+.winners-page {
+    display: none;
+}
+.table {
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: rgb(214, 214, 214);
+    color: rgb(25, 46, 46);
+    border: 16px solid rgb(214, 214, 214);
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+th {
+    font-size: 18px;
+    padding: 10px;
+}
+td {
+    background: rgb(170, 170, 170);
+    padding: 10px;
+}
+.garage {
+    margin-bottom: 20px;
+}
+.header {
+    padding: 20px 10px;
+}
+.title {
+    font-size: 24px;
+}
+.page {
+    font-size: 20px;
+}
+.button {
+    color: rgb(18, 27, 34);
+    font-size: 13px;
+    font-weight: 600;
+    background-color: rgb(188, 200, 242);
+    padding: 3px 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: rgb(255, 255, 255);
+}
+.button:disabled {
+    background-color: rgb(187, 187, 187);
+    cursor: auto;
+}
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    width: fit-content;
+}
+.name:disabled {
+    background-color: rgb(100, 100, 100);
+}
+.color:disabled {
+    background-color: rgb(100, 100, 100);
+}
+.car-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.cars {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.road {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    border-bottom: 2px dashed white;
+}
+.car-controls {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    gap: 5px;
+}
+.car-image svg {
+    fill: rgb(102, 255, 0);
+    width: 70px;
+    height: 35px;
+}
+.car-image {
+    /* width: 100%;
+    display: flex;
+    align-items: flex-end; */
+    position: relative;
+}
+.flag svg {
+    fill: rgb(255, 255, 255);
+    width: 40px;
+}
+.flag {
+    padding-right: 50px;
+    position: absolute;
+    right: 0px;
+}
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    background-color: #7e7597e7;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    display: none;
+}
+.pagination-winners {
+    display: none;
+}
+.sort-btns {
+    padding-left: 10px;
+    display: none;
+}
+@keyframes drive {
+    from {
+        left: 0%;
+    }
+    to {
+        left: calc(100% - 140px);
+    }
+}
